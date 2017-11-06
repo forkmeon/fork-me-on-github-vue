@@ -5,9 +5,30 @@ CSS implementation of [GitHub ribbon](//github.com/blog/273-github-ribbons).
 ## Usage
 
 ``` javascript
-var Component = require('fork-me-on-github-vue');
+import ForkeMeOnGithub from 'fork-me-on-github-vue';
+
+Vue.use(ForkeMeOnGithub);
 ```
 
-## License
-
-The MIT License (MIT)
+```
+<template>
+  ...
+  <Ribbon
+    v-bind="ribbonOptions"
+  ></Ribbon>
+  ...
+</template>
+<script>
+  ...
+  data() {
+    return {
+      ribbonOptions: {
+        text: 'Fork me on GitHub',
+        linkUrl: pkg.repository.url,
+        fixed: true
+      }
+    }
+  }
+  ...
+</script>
+```
