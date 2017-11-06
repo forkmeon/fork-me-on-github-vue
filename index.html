@@ -13,11 +13,11 @@
         var isOnline = !!~location.host.indexOf('github');
         var script = document.createElement('script');
         script.type = 'text/javascript';
-        script.src = (isOnline ? '//npmcdn.com/fork-me-on-github-vue@latest' : '.') + '/dist/homepage.js';
+        script.src = (isOnline ? '//unpkg.com/fork-me-on-github-vue@latest' : '.') + '/dist/homepage.js';
         var link = document.createElement('link');
         link.rel = 'stylesheet';
         link.type = 'text/css';
-        link.href = (isOnline ? '//npmcdn.com/fork-me-on-github-vue@latest' : '.') + '/assets/bootstrap.min.css';
+        link.href = (isOnline ? '//unpkg.com/fork-me-on-github-vue@latest' : '.') + '/assets/bootstrap.min.css';
         var head = document.getElementsByTagName('head')[0];
         head.appendChild(link);
         head.appendChild(script);
