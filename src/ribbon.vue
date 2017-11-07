@@ -38,7 +38,7 @@ const outerStyle = {
   width: '150px',
   height: '150px',
   overflow: 'hidden',
-  zIndex: 9999
+  zIndex: 99999
 };
 
 export default {
