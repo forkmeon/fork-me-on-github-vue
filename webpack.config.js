@@ -1,8 +1,10 @@
 const path = require('path');
 
+const pkg = require('./package');
+
 module.exports = {
   entry: {
-    'fork-me-on-github-vue': path.join(__dirname, 'src'),
+    [pkg.name]: path.join(__dirname, 'src'),
     homepage: path.join(__dirname, 'homepage')
   },
   output: {
