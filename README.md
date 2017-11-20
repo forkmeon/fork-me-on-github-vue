@@ -4,13 +4,13 @@ CSS implementation of [GitHub ribbon](//github.com/blog/273-github-ribbons).
 
 ## Usage
 
-``` javascript
+```javascript
 import ForkeMeOnGithub from 'fork-me-on-github-vue';
 
 Vue.use(ForkeMeOnGithub);
 ```
 
-```
+```vue
 <template>
   ...
   <Ribbon
