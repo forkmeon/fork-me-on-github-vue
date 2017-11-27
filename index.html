@@ -16,6 +16,7 @@
         var script = document.createElement('script');
         script.type = 'text/javascript';
         script.src = (isOnline ? '//unpkg.com/fork-me-on-github-vue@latest' : '.') + '/dist/homepage.js';
+        var head = document.getElementsByTagName('head')[0];
         head.appendChild(script);
       </script>
     </div>
